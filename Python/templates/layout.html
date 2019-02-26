@@ -1,0 +1,36 @@
+<!Doctype html5>
+    <html>
+    
+        <link rel="stylesheet" href="static/style.css" type="text/css" >
+        <link rel="stylesheet" href="static/bootstrap.min.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+  
+    <head>
+	{% if title %}
+		<title> {{ title }} </title>
+	{% endif %}
+
+        <title>Page</title>
+
+	
+    </head>
+
+    <body>
+    <img src="/static/images.png" height=50px; alt="Code Logo">
+        
+           {% block body %}
+           {% endblock %}
+                
+                <!--Errors-->
+            {% if error %}
+            <p class="error"><strong>Error:</strong> {{ error }}</p>
+            {% endif %} 
+            <!--flashed messages-->
+            {% for message in get_flashed_messages() %}
+               <p class="FLASHED"> {{ message }} </p>
+            {% endfor %}
+      
+    </body>
+</html>

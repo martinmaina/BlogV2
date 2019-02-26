@@ -1,0 +1,37 @@
+body {
+    background-color: cornflowerblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.error {
+    font-weight: bold;
+    font-family: 'Comic Sans MS';
+}
+
+.login_ {
+    font-size: 80%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.login_ a:hover {
+    text-decoration: none;
+}
+
+.FLASHED {
+    border: 2px solid orange;
+    border-radius: 10px;
+    color: burlywood;
+    text-align: left;
+    background-color: aqua;
+    width: 40%;
+}
+
+.postTitle {
+    font-family: 'Comic Sans MS';
+    font-size: 120%;
+    border: 1px solid orange;
+}
+
+.container img {
+    text-align: center;
+}

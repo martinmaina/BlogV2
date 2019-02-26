@@ -1,0 +1,16 @@
+{% extends 'layout.html'%}
+
+
+{% block body %}
+<div class="container">
+    <h2>Please Login</h2>
+    <form action="" method="POST">
+        <p>Username <input type="text" placeholder="username" name="username" value="{{ request.form.username }}"></p>
+        <p>Password <input type="password" placeholder="password" name="password" value="{{ request.form.password }}"> </p>
+        <p style="margin-left:15%;"><input class="btn btn-default" type="submit" value="Login"></p>
+
+</form>
+</div>
+{% endblock body %}
+
+

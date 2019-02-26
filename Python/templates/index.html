@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+    <title>Flask Intro</title>
+    {% block body %}
+        <div class = "container">
+            <h1>Welcome to Blog Post</h1>
+            <br>
+            <p> Logout<a href="/logout"> here.</a></p>
+            <img src="static/hey.png" height=55px; alt="Hey">
+            <img src="static/hello.jpg" height=55px; alt="Hello">
+           <h3>Posts:</h3>
+           {% for post in posts %}  
+           
+            <strong >Title:</strong> {{ post.title }} <br> 
+            
+    
+            <strong>Post:</strong> {{ post.description }}<br><br>
+            {% endfor %} 
+    </div>
+    {% endblock body %}
